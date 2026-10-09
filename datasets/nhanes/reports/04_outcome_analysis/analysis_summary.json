@@ -1,0 +1,50 @@
+{
+  "cycle": "2017-2018",
+  "universe_participants": 9254,
+  "analysis_domain": 804,
+  "strata": 15,
+  "stratum_psu_pairs": 30,
+  "full_design_df": 15,
+  "model_complete_cases": 651,
+  "model_excluded_missing_predictors": 153,
+  "model_residual_survey_df": 5.0,
+  "model_predictors": [
+    "age_per_10_years",
+    "female",
+    "bmi_per_5_units",
+    "poverty_ratio",
+    "insulin_use",
+    "oral_diabetes_med_use",
+    "usual_diabetes_professional",
+    "a1c_test_past_year",
+    "log1p_glucose_checks",
+    "log1p_activity_equivalents"
+  ],
+  "model_family": "Gaussian",
+  "model_link": "Identity",
+  "covariance": "svy Taylor-linearized design-based covariance with strata and PSUs",
+  "model_iterations": 2,
+  "model_in_sample_weighted_r_squared": 0.16036031056567857,
+  "input_file": "data/processed/nhanes_2017_2018_features.csv",
+  "input_sha256": "511d0e6f0773a9d0f4e08d46a95d239c84b88ad5a90e237454df74dc7d696a02",
+  "weight_variable": "WTMEC2YR",
+  "stratum_variable": "SDMVSTRA",
+  "psu_variable": "SDMVPSU",
+  "package_versions": {
+    "svy": "0.32.1",
+    "svy-rs": "0.18.0",
+    "polars": "2.0.0",
+    "pandas": "2.2.3",
+    "numpy": "2.5.1",
+    "scipy": "1.18.1",
+    "statsmodels": "0.15.0"
+  },
+  "notes": [
+    "Design bound to the full 9254-person universe; where selects outcome/model domains without prefiltering rows.",
+    "Weighted estimates describe the measured-HbA1c domain; unaddressed HbA1c item nonresponse limits population interpretation.",
+    "Model uses 10 prespecified slopes, complete cases, and library residual survey df; FDR excludes the intercept.",
+    "No imputation or additional item-nonresponse adjustment; complete-case estimates may reflect selection bias.",
+    "Age and poverty ratio top codes are treated numerically in this initial specification; sensitivity remains pending.",
+    "No external or predictive validation, causal effects, or individualized treatment thresholds are established."
+  ]
+}

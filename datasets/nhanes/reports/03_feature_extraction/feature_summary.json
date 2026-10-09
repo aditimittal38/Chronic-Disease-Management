@@ -1,0 +1,43 @@
+{
+  "cycle": "2017-2018",
+  "universe_participants": 9254,
+  "analysis_domain": 804,
+  "original_cleaned_columns": 52,
+  "derived_columns": 27,
+  "total_columns": 79,
+  "domain_activity_complete": 792,
+  "domain_hba1c_at_least_8": 218,
+  "domain_hba1c_at_least_7": 404,
+  "domain_activity_exceeds_calendar_week": 0,
+  "input_hashes": {
+    "data/processed/nhanes_2017_2018_cleaned.csv": "7f65db369b692d2a4664b762efe65a2776281ff800cf818793b6b2c61b789807",
+    "data/processed/nhanes_2017_2018_response_status.csv": "60a24e19beb22a3f075c7505618706c213ee827f022c27ea5dc37a6750441179"
+  },
+  "output_file": "data/processed/nhanes_2017_2018_features.csv",
+  "output_sha256": "511d0e6f0773a9d0f4e08d46a95d239c84b88ad5a90e237454df74dc7d696a02",
+  "exclude_from_clinical_predictors": [
+    "SEQN",
+    "WTMEC2YR",
+    "WTINT2YR",
+    "SDMVSTRA",
+    "SDMVPSU",
+    "RIDSTATR",
+    "LBXGH",
+    "DIQ280",
+    "hba1c_at_least_8",
+    "hba1c_at_least_7",
+    "analysis_domain",
+    "pregnancy_uncertain",
+    "analysis_domain_known_pregnancy_status_sensitivity",
+    "activity_complete",
+    "activity_total_exceeds_calendar_week",
+    "glucose_frequency_status"
+  ],
+  "notes": [
+    "No participant exclusions, imputation, weighted estimates, statistical tests, or fitted models in this step.",
+    "Continuous LBXGH is the primary proposed outcome; cutoff flags are secondary/sensitivity targets only.",
+    "Missing activity domains do not become zero; all five domains required for aggregate activity measures.",
+    "Choose original versus derived representations; avoid all activity totals/components or source/flag duplicates in the same model.",
+    "All summaries are unweighted sample descriptions, not national estimates or validated individual treatment goals."
+  ]
+}

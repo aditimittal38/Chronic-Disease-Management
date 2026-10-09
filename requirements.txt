@@ -1,0 +1,2 @@
+-r datasets/uci/requirements.txt
+-r datasets/nhanes/requirements.txt

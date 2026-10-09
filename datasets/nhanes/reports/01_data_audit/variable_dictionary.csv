@@ -1,0 +1,42 @@
+variable,component,role,meaning
+SEQN,DEMO_J,Identifier,Survey participant ID; not a predictor
+RIDAGEYR,DEMO_J,Demographics,Age; 80 represents age 80 or older
+RIAGENDR,DEMO_J,Demographics,Recorded sex category
+RIDRETH3,DEMO_J,Demographics,Recorded race/Hispanic origin
+DMDEDUC2,DEMO_J,Socioeconomic,Education for adults 20+; codes 7/9 are refusal/don't know
+INDFMPIR,DEMO_J,Socioeconomic,Family income-to-poverty ratio; top-coded at 5
+RIDEXPRG,DEMO_J,Cohort,Pregnancy status released for women 20-44; blank does not universally mean unknown pregnancy
+RIDSTATR,DEMO_J,Survey design,Interview/examination status
+WTMEC2YR,DEMO_J,Survey design,Two-year MEC examination weight; zero for unexamined people
+WTINT2YR,DEMO_J,Survey design,Interview weight; not the primary HbA1c analysis weight
+SDMVSTRA,DEMO_J,Survey design,Masked variance stratum
+SDMVPSU,DEMO_J,Survey design,"Masked PSU; use together with stratum, not alone"
+DIQ010,DIQ_J,Cohort,"Diagnosed diabetes: 1 yes, 2 no, 3 borderline, 7 refused, 9 don't know"
+DID040,DIQ_J,Clinical history,"Age at diagnosis; 666 below age one, 777/999 refused/don't know"
+DIQ050,DIQ_J,Treatment,Current insulin use; not medication adherence
+DIQ070,DIQ_J,Treatment,Current diabetic pill use; nonresponse may reflect questionnaire routing
+DIQ230,DIQ_J,Monitoring,Last diabetes educator/dietitian/nutritionist visit; excludes doctors
+DIQ240,DIQ_J,Monitoring,One usual diabetes doctor/health professional
+DID250,DIQ_J,Monitoring,Visits to that usual doctor; missing if DIQ240 is No; 7777/9999 refused/don't know
+DID260,DIQ_J,Monitoring,"Self/family glucose checks; 0 never, 777/999 refused/don't know; combine with units"
+DIQ260U,DIQ_J,Monitoring,Glucose-check frequency unit: day/week/month/year
+DIQ275,DIQ_J,Monitoring,Self-reported professional A1C testing in past year
+DIQ280,DIQ_J,Outcome-related,Self-reported last A1C; not measured LBXGH; avoid as a shortcut predictor
+DIQ291,DIQ_J,Monitoring,Reported provider A1C goal; not a universal personalized threshold
+DIQ080,DIQ_J,Clinical history,Self-reported diabetes-related retinopathy
+LBXGH,GHB_J,Outcome,Measured HbA1c in percent; keep continuous value
+BMXBMI,BMX_J,Body size,Measured body mass index
+PAQ605,PAQ_J,Lifestyle,"Vigorous work activity; 1 yes, 2 no, 7/9 refused/don't know"
+PAQ620,PAQ_J,Lifestyle,Moderate work activity
+PAQ635,PAQ_J,Lifestyle,Walking/bicycling for transport
+PAQ650,PAQ_J,Lifestyle,Vigorous recreational activity
+PAQ665,PAQ_J,Lifestyle,Moderate recreational activity
+PAQ610,PAQ_J,Lifestyle,Days of vigorous work; blank may mean PAQ605=No; 77/99 special codes
+PAD615,PAQ_J,Lifestyle,Daily vigorous work minutes; 7777/9999 special codes; use with days and gate
+PAD680,PAQ_J,Lifestyle,"Daily sedentary minutes; zero valid, 7777/9999 refused/don't know"
+HUQ010,HUQ_J,Health context,Self-rated general health category
+HUQ030,HUQ_J,Access,"Usual healthcare place: 1 yes, 2 none, 3 more than one place"
+HUQ041,HUQ_J,Access,Usual healthcare setting; routed by HUQ030
+HUQ051,HUQ_J,Utilization,"Categorical healthcare-visit bands, not raw visit counts"
+HUQ071,HUQ_J,Utilization,Any overnight hospitalization in past year; not 30-day readmission
+HUD080,HUQ_J,Utilization,Hospitalization count category; 6 means six or more; conditional on HUQ071

@@ -1,0 +1,23 @@
+{
+  "cycle": "2017-2018",
+  "universe_participants": 9254,
+  "selected_fields": 49,
+  "cleaned_columns": 52,
+  "analysis_domain": 804,
+  "pregnancy_uncertain_in_domain": 2,
+  "pregnancy_sensitivity_domain": 802,
+  "invalid_values": 0,
+  "routing_conflicts": 0,
+  "input_sha256": "15f929216a7d654d5b1fe8c35ce32fd80dc6065981b9d558550d3c656a2387aa",
+  "output_file": "data/processed/nhanes_2017_2018_cleaned.csv",
+  "status_file": "data/processed/nhanes_2017_2018_response_status.csv",
+  "output_sha256": "7f65db369b692d2a4664b762efe65a2776281ff800cf818793b6b2c61b789807",
+  "status_sha256": "60a24e19beb22a3f075c7505618706c213ee827f022c27ea5dc37a6750441179",
+  "notes": [
+    "All demographic participants retained; analysis_domain identifies the measured-HbA1c domain.",
+    "Selected raw numeric fields only; unselected fields remain available in the unchanged merged input.",
+    "No blanket missing-to-zero replacement, learned imputation, trimming, scaling, frequency conversion, or modeling.",
+    "Skips, refusal, unknown answers, intervals, top codes, and missing required units are tracked separately.",
+    "Missingness explanations based on observed gates cannot fully identify every original reason for nonresponse."
+  ]
+}

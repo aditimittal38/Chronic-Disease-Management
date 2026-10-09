@@ -1,0 +1,84 @@
+{
+  "cycle": "2017-2018",
+  "acquired_utc": "2026-10-09T08:20:30.524186+00:00",
+  "sources": [
+    {
+      "component": "DEMO_J",
+      "description": "Demographics and survey design",
+      "data_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.xpt",
+      "codebook_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+      "raw_file": "data/raw/2017-2018/DEMO_J.xpt",
+      "sha256": "c0b46e0345ea19404928656277c8b0d10b0cca348a9b2fe4fc3c67e8b7ee73ec",
+      "codebook_sha256": "07f8f1e7f884fab180ccf53c705652de9d663833fdad85b0d759919c8464cde0",
+      "rows": 9254,
+      "columns": 46,
+      "transport_zeros_restored": 18308
+    },
+    {
+      "component": "DIQ_J",
+      "description": "Diabetes diagnosis, treatment, and monitoring",
+      "data_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DIQ_J.xpt",
+      "codebook_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DIQ_J.htm",
+      "raw_file": "data/raw/2017-2018/DIQ_J.xpt",
+      "sha256": "1ecbf5360dfc331d1efbf32198553dc30e9a1f4cff0a907ed30ca72bac797f89",
+      "codebook_sha256": "d2545b2ef455fabf4f5ef8873b9c46d2ce5e599424f3f7d6bec236a57bf0d869",
+      "rows": 8897,
+      "columns": 54,
+      "transport_zeros_restored": 599
+    },
+    {
+      "component": "GHB_J",
+      "description": "Measured glycohemoglobin (HbA1c)",
+      "data_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/GHB_J.xpt",
+      "codebook_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/GHB_J.htm",
+      "raw_file": "data/raw/2017-2018/GHB_J.xpt",
+      "sha256": "35f07094573a0061a03ed609a5a363b34eb1b1c7065d1623b43d72e132a8a654",
+      "codebook_sha256": "b9f90ef7aa539fe98edc776818ddfbfc4ee9f88ecf5c21ba168c5de8116e174d",
+      "rows": 6401,
+      "columns": 2,
+      "transport_zeros_restored": 0
+    },
+    {
+      "component": "BMX_J",
+      "description": "Measured body size and BMI",
+      "data_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/BMX_J.xpt",
+      "codebook_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/BMX_J.htm",
+      "raw_file": "data/raw/2017-2018/BMX_J.xpt",
+      "sha256": "8d675e42d8826ac98714b2c3dd4c5138a5e353fb4424f7eff5e6db4a01ce838a",
+      "codebook_sha256": "557b2ad6946237b7a169819006e7126e48e25cdb45926605cb368342c6773689",
+      "rows": 8704,
+      "columns": 21,
+      "transport_zeros_restored": 0
+    },
+    {
+      "component": "PAQ_J",
+      "description": "Physical activity and sedentary time",
+      "data_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/PAQ_J.xpt",
+      "codebook_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/PAQ_J.htm",
+      "raw_file": "data/raw/2017-2018/PAQ_J.xpt",
+      "sha256": "048120aa3a5c8b5cd457ad3e13dfd62d728b12ea6644960e933ad374ec907e79",
+      "codebook_sha256": "0d14e3602706ae11d6e977470bcb5c2b42301ad28c144090f7298f41dd92d764",
+      "rows": 5856,
+      "columns": 17,
+      "transport_zeros_restored": 3
+    },
+    {
+      "component": "HUQ_J",
+      "description": "Healthcare utilization and access",
+      "data_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/HUQ_J.xpt",
+      "codebook_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/HUQ_J.htm",
+      "raw_file": "data/raw/2017-2018/HUQ_J.xpt",
+      "sha256": "0d8814ca6a72c003eb89885a3a24dcff3b475dfed454089cf4890f9ab9da06d2",
+      "codebook_sha256": "bebd6cd77f92f5de692196a345b396da7deb5993eb1a00a6f15ba1a9c64427d6",
+      "rows": 9254,
+      "columns": 10,
+      "transport_zeros_restored": 1276
+    }
+  ],
+  "merged_rows": 9254,
+  "merged_columns": 145,
+  "merged_file": "data/processed/nhanes_2017_2018_merged.csv",
+  "merged_sha256": "15f929216a7d654d5b1fe8c35ce32fd80dc6065981b9d558550d3c656a2387aa",
+  "interpretation": "One row per participant; demographic left joins retain ineligible and unmeasured records for auditing.",
+  "parser_note": "Exact pandas IBM-XPORT zero artifact restored to zero; original eight-byte zero encoding verified in DIQ_J. XPT source bytes are unchanged."
+}

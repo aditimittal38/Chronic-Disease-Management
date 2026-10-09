@@ -1,0 +1,24 @@
+{
+  "cycle": "2017-2018",
+  "participants": 9254,
+  "columns": 145,
+  "adult_diagnosed_diabetes_before_measurement_filters": 876,
+  "provisional_cohort": 804,
+  "hbA1c_mean_unweighted": 7.400124378109452,
+  "hbA1c_median_unweighted": 7.0,
+  "hbA1c_min": 4.1,
+  "hbA1c_max": 16.2,
+  "hbA1c_at_least_8_unweighted_count": 218,
+  "cohort_strata": 15,
+  "cohort_stratum_psu_pairs": 30,
+  "pregnancy_status_3_in_cohort": 2,
+  "merged_sha256": "15f929216a7d654d5b1fe8c35ce32fd80dc6065981b9d558550d3c656a2387aa",
+  "notes": [
+    "Audit only; no code recoding, imputation, feature extraction, weighted population estimates, or modeling.",
+    "Missingness includes questionnaire skips, age eligibility, module absence, and item nonresponse.",
+    "Refused/don't-know sentinel codes remain observed values until variable-specific cleaning.",
+    "HbA1c >=8% is an exploratory analytical cutoff, not proof of failing an individualized clinical goal.",
+    "Use MEC weights with strata and PSU, retaining the full survey universe for domain variance estimation.",
+    "Current HbA1c cannot validate the UCI readmission model, and participants cannot be linked across datasets."
+  ]
+}

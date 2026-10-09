@@ -1,0 +1,8 @@
+scenario,family,outcome,selection,model_participants,domain_excluded_for_this_specification,residual_survey_df,iterations,binary_events
+reduced_adjustment,gaussian,LBXGH,primary,683,121,9.0,2,
+reduced_same_complete_cases,gaussian,LBXGH,original_complete_cases,651,153,9.0,2,
+top_code_flags,gaussian,LBXGH,primary,683,121,7.0,2,
+exclude_uncertain_pregnancy,gaussian,LBXGH,pregnancy_sensitivity,649,155,5.0,2,
+without_income_adjustment,gaussian,LBXGH,primary,737,67,6.0,2,
+hba1c_at_least_8,binomial,hba1c_at_least_8,original_complete_cases,651,153,5.0,6,177.0
+hba1c_at_least_7,binomial,hba1c_at_least_7,original_complete_cases,651,153,5.0,6,318.0

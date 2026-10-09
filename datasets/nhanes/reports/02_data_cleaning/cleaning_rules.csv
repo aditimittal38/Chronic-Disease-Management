@@ -1,0 +1,50 @@
+variable,allowed_categories,minimum,maximum,integral,special_codes
+SEQN,,1.0,,True,{}
+RIDAGEYR,,0.0,80.0,True,{}
+RIAGENDR,"1,2",,,False,{}
+RIDRETH3,"1,2,3,4,6,7",,,False,{}
+DMDEDUC2,"1,2,3,4,5",,,True,"{""7"": ""refused"", ""9"": ""dont_know""}"
+INDFMPIR,,0.0,5.0,False,{}
+RIDEXPRG,"1,2",,,False,"{""3"": ""cannot_ascertain""}"
+RIDSTATR,"1,2",,,False,{}
+WTMEC2YR,,0.0,,False,{}
+WTINT2YR,,0.0,,False,{}
+SDMVSTRA,,1.0,,True,{}
+SDMVPSU,"1,2",,,False,{}
+DIQ010,"1,2,3",,,True,"{""7"": ""refused"", ""9"": ""dont_know""}"
+DID040,,1.0,80.0,True,"{""666"": ""age_below_one_interval"", ""777"": ""refused"", ""999"": ""dont_know""}"
+DIQ050,"1,2",,,True,"{""7"": ""refused"", ""9"": ""dont_know""}"
+DIQ070,"1,2",,,True,"{""7"": ""refused"", ""9"": ""dont_know""}"
+DIQ230,"1,2,3,4,5",,,True,"{""7"": ""refused"", ""9"": ""dont_know""}"
+DIQ240,"1,2",,,True,"{""7"": ""refused"", ""9"": ""dont_know""}"
+DID250,,0.0,,True,"{""7777"": ""refused"", ""9999"": ""dont_know""}"
+DID260,,0.0,,True,"{""777"": ""refused"", ""999"": ""dont_know""}"
+DIQ260U,"1,2,3,4",,,False,{}
+DIQ275,"1,2",,,True,"{""7"": ""refused"", ""9"": ""dont_know""}"
+DIQ280,,0.01,,False,"{""777"": ""refused"", ""999"": ""dont_know""}"
+DIQ291,"1,2,3,4,5,6",,,True,"{""77"": ""refused"", ""99"": ""dont_know""}"
+DIQ080,"1,2",,,True,"{""7"": ""refused"", ""9"": ""dont_know""}"
+LBXGH,,0.01,,False,{}
+BMXBMI,,0.01,,False,{}
+PAD680,,0.0,1439.0,True,"{""7777"": ""refused"", ""9999"": ""dont_know""}"
+HUQ010,"1,2,3,4,5",,,True,"{""7"": ""refused"", ""9"": ""dont_know""}"
+HUQ030,"1,2,3",,,True,"{""7"": ""refused"", ""9"": ""dont_know""}"
+HUQ041,"1,2,3,4,5,6",,,True,"{""77"": ""refused"", ""99"": ""dont_know""}"
+HUQ051,"0,1,2,3,4,5,6,7,8",,,True,"{""77"": ""refused"", ""99"": ""dont_know""}"
+HUQ071,"1,2",,,True,"{""7"": ""refused"", ""9"": ""dont_know""}"
+HUD080,"1,2,3,4,5,6",,,True,"{""77777"": ""refused"", ""99999"": ""dont_know""}"
+PAQ605,"1,2",,,True,"{""7"": ""refused"", ""9"": ""dont_know""}"
+PAQ610,,1.0,7.0,True,"{""77"": ""refused"", ""99"": ""dont_know""}"
+PAD615,,10.0,1439.0,True,"{""7777"": ""refused"", ""9999"": ""dont_know""}"
+PAQ620,"1,2",,,True,"{""7"": ""refused"", ""9"": ""dont_know""}"
+PAQ625,,1.0,7.0,True,"{""77"": ""refused"", ""99"": ""dont_know""}"
+PAD630,,10.0,1439.0,True,"{""7777"": ""refused"", ""9999"": ""dont_know""}"
+PAQ635,"1,2",,,True,"{""7"": ""refused"", ""9"": ""dont_know""}"
+PAQ640,,1.0,7.0,True,"{""77"": ""refused"", ""99"": ""dont_know""}"
+PAD645,,10.0,1439.0,True,"{""7777"": ""refused"", ""9999"": ""dont_know""}"
+PAQ650,"1,2",,,True,"{""7"": ""refused"", ""9"": ""dont_know""}"
+PAQ655,,1.0,7.0,True,"{""77"": ""refused"", ""99"": ""dont_know""}"
+PAD660,,10.0,1439.0,True,"{""7777"": ""refused"", ""9999"": ""dont_know""}"
+PAQ665,"1,2",,,True,"{""7"": ""refused"", ""9"": ""dont_know""}"
+PAQ670,,1.0,7.0,True,"{""77"": ""refused"", ""99"": ""dont_know""}"
+PAD675,,10.0,1439.0,True,"{""7777"": ""refused"", ""9999"": ""dont_know""}"

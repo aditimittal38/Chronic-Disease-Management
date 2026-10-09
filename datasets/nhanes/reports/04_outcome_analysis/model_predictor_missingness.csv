@@ -1,0 +1,11 @@
+model_predictor,source_variable,domain_missing,domain_observed
+age_per_10_years,RIDAGEYR,0,804
+female,RIAGENDR,0,804
+bmi_per_5_units,BMXBMI,19,785
+poverty_ratio,INDFMPIR,105,699
+insulin_use,insulin_use,0,804
+oral_diabetes_med_use,oral_diabetes_med_use,0,804
+usual_diabetes_professional,usual_diabetes_professional,2,802
+a1c_test_past_year,a1c_test_past_year,34,770
+log1p_glucose_checks,glucose_checks_per_day_equivalent,5,799
+log1p_activity_equivalents,activity_moderate_equivalent_minutes_week,12,792

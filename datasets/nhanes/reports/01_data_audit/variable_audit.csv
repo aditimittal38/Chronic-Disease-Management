@@ -1,0 +1,146 @@
+variable,component,role,meaning,all_participant_missing,all_participant_missing_percent,cohort_missing,cohort_missing_percent,distinct_observed_values
+SEQN,DEMO_J,Identifier,Survey participant ID; not a predictor,0,0.0,0,0.0,9254
+SDDSRVYR,DEMO_J,Unselected,Consult component codebook before use,0,0.0,0,0.0,1
+RIDSTATR,DEMO_J,Survey design,Interview/examination status,0,0.0,0,0.0,2
+RIAGENDR,DEMO_J,Demographics,Recorded sex category,0,0.0,0,0.0,2
+RIDAGEYR,DEMO_J,Demographics,Age; 80 represents age 80 or older,0,0.0,0,0.0,81
+RIDAGEMN,DEMO_J,Unselected,Consult component codebook before use,8657,93.5487356818673,804,100.0,25
+RIDRETH1,DEMO_J,Unselected,Consult component codebook before use,0,0.0,0,0.0,5
+RIDRETH3,DEMO_J,Demographics,Recorded race/Hispanic origin,0,0.0,0,0.0,6
+RIDEXMON,DEMO_J,Unselected,Consult component codebook before use,550,5.943375837475686,0,0.0,2
+RIDEXAGM,DEMO_J,Unselected,Consult component codebook before use,5821,62.9025286362654,804,100.0,240
+DMQMILIZ,DEMO_J,Unselected,Consult component codebook before use,3250,35.11994813053815,0,0.0,4
+DMQADFC,DEMO_J,Unselected,Consult component codebook before use,8693,93.9377566457748,672,83.5820895522388,3
+DMDBORN4,DEMO_J,Unselected,Consult component codebook before use,0,0.0,0,0.0,4
+DMDCITZN,DEMO_J,Unselected,Consult component codebook before use,3,0.03241841365895829,0,0.0,4
+DMDYRSUS,DEMO_J,Unselected,Consult component codebook before use,7306,78.94964339744975,542,67.41293532338308,11
+DMDEDUC3,DEMO_J,Unselected,Consult component codebook before use,6948,75.08104603414739,804,100.0,17
+DMDEDUC2,DEMO_J,Socioeconomic,Education for adults 20+; codes 7/9 are refusal/don't know,3685,39.8206181110871,0,0.0,7
+DMDMARTL,DEMO_J,Unselected,Consult component codebook before use,3685,39.8206181110871,0,0.0,7
+RIDEXPRG,DEMO_J,Cohort,Pregnancy status released for women 20-44; blank does not universally mean unknown pregnancy,8144,88.00518694618543,770,95.77114427860697,3
+SIALANG,DEMO_J,Unselected,Consult component codebook before use,0,0.0,0,0.0,2
+SIAPROXY,DEMO_J,Unselected,Consult component codebook before use,0,0.0,0,0.0,2
+SIAINTRP,DEMO_J,Unselected,Consult component codebook before use,0,0.0,0,0.0,2
+FIALANG,DEMO_J,Unselected,Consult component codebook before use,474,5.122109358115409,34,4.228855721393035,2
+FIAPROXY,DEMO_J,Unselected,Consult component codebook before use,474,5.122109358115409,34,4.228855721393035,2
+FIAINTRP,DEMO_J,Unselected,Consult component codebook before use,474,5.122109358115409,34,4.228855721393035,2
+MIALANG,DEMO_J,Unselected,Consult component codebook before use,2570,27.771774367840933,56,6.965174129353234,2
+MIAPROXY,DEMO_J,Unselected,Consult component codebook before use,2570,27.771774367840933,56,6.965174129353234,2
+MIAINTRP,DEMO_J,Unselected,Consult component codebook before use,2570,27.771774367840933,56,6.965174129353234,2
+AIALANGA,DEMO_J,Unselected,Consult component codebook before use,4277,46.2178517397882,333,41.417910447761194,3
+DMDHHSIZ,DEMO_J,Unselected,Consult component codebook before use,0,0.0,0,0.0,7
+DMDFMSIZ,DEMO_J,Unselected,Consult component codebook before use,0,0.0,0,0.0,7
+DMDHHSZA,DEMO_J,Unselected,Consult component codebook before use,0,0.0,0,0.0,4
+DMDHHSZB,DEMO_J,Unselected,Consult component codebook before use,0,0.0,0,0.0,4
+DMDHHSZE,DEMO_J,Unselected,Consult component codebook before use,0,0.0,0,0.0,4
+DMDHRGND,DEMO_J,Unselected,Consult component codebook before use,0,0.0,0,0.0,2
+DMDHRAGZ,DEMO_J,Unselected,Consult component codebook before use,0,0.0,0,0.0,4
+DMDHREDZ,DEMO_J,Unselected,Consult component codebook before use,490,5.29500756429652,31,3.8557213930348255,3
+DMDHRMAZ,DEMO_J,Unselected,Consult component codebook before use,191,2.0639723362870113,4,0.4975124378109453,3
+DMDHSEDZ,DEMO_J,Unselected,Consult component codebook before use,4503,48.66003890209639,383,47.636815920398014,3
+WTINT2YR,DEMO_J,Survey design,Interview weight; not the primary HbA1c analysis weight,0,0.0,0,0.0,8068
+WTMEC2YR,DEMO_J,Survey design,Two-year MEC examination weight; zero for unexamined people,0,0.0,0,0.0,7719
+SDMVPSU,DEMO_J,Survey design,"Masked PSU; use together with stratum, not alone",0,0.0,0,0.0,2
+SDMVSTRA,DEMO_J,Survey design,Masked variance stratum,0,0.0,0,0.0,15
+INDHHIN2,DEMO_J,Unselected,Consult component codebook before use,491,5.3058137021828395,39,4.850746268656716,16
+INDFMIN2,DEMO_J,Unselected,Consult component codebook before use,474,5.122109358115409,34,4.228855721393035,16
+INDFMPIR,DEMO_J,Socioeconomic,Family income-to-poverty ratio; top-coded at 5,1231,13.302355738059218,105,13.059701492537313,445
+DIQ010,DIQ_J,Cohort,"Diagnosed diabetes: 1 yes, 2 no, 3 borderline, 7 refused, 9 don't know",357,3.8577912254160367,0,0.0,4
+DID040,DIQ_J,Clinical history,"Age at diagnosis; 666 below age one, 777/999 refused/don't know",8362,90.36092500540308,1,0.12437810945273632,80
+DIQ160,DIQ_J,Unselected,Consult component codebook before use,3560,38.46985087529717,804,100.0,3
+DIQ170,DIQ_J,Unselected,Consult component codebook before use,3378,36.50313377998703,804,100.0,3
+DIQ172,DIQ_J,Unselected,Consult component codebook before use,3378,36.50313377998703,804,100.0,4
+DIQ175A,DIQ_J,Unselected,Consult component codebook before use,8109,87.62697212016425,804,100.0,2
+DIQ175B,DIQ_J,Unselected,Consult component codebook before use,8597,92.90036740868814,804,100.0,1
+DIQ175C,DIQ_J,Unselected,Consult component codebook before use,9037,97.65506807866868,804,100.0,1
+DIQ175D,DIQ_J,Unselected,Consult component codebook before use,8766,94.72660471147611,804,100.0,1
+DIQ175E,DIQ_J,Unselected,Consult component codebook before use,9077,98.08731359412147,804,100.0,1
+DIQ175F,DIQ_J,Unselected,Consult component codebook before use,9216,99.58936676031986,804,100.0,1
+DIQ175G,DIQ_J,Unselected,Consult component codebook before use,8936,96.56364815215042,804,100.0,1
+DIQ175H,DIQ_J,Unselected,Consult component codebook before use,8963,96.85541387508104,804,100.0,1
+DIQ175I,DIQ_J,Unselected,Consult component codebook before use,9178,99.17873352063972,804,100.0,1
+DIQ175J,DIQ_J,Unselected,Consult component codebook before use,9091,98.23859952452993,804,100.0,1
+DIQ175K,DIQ_J,Unselected,Consult component codebook before use,9225,99.68662200129673,804,100.0,1
+DIQ175L,DIQ_J,Unselected,Consult component codebook before use,9183,99.23276421007132,804,100.0,1
+DIQ175M,DIQ_J,Unselected,Consult component codebook before use,9099,98.32504862762049,804,100.0,1
+DIQ175N,DIQ_J,Unselected,Consult component codebook before use,9141,98.7789064188459,804,100.0,1
+DIQ175O,DIQ_J,Unselected,Consult component codebook before use,9087,98.19537497298465,804,100.0,1
+DIQ175P,DIQ_J,Unselected,Consult component codebook before use,9111,98.45472228225633,804,100.0,1
+DIQ175Q,DIQ_J,Unselected,Consult component codebook before use,9082,98.14134428355305,804,100.0,1
+DIQ175R,DIQ_J,Unselected,Consult component codebook before use,9235,99.79468338015994,804,100.0,1
+DIQ175S,DIQ_J,Unselected,Consult component codebook before use,9217,99.60017289820618,804,100.0,1
+DIQ175T,DIQ_J,Unselected,Consult component codebook before use,9138,98.74648800518695,804,100.0,1
+DIQ175U,DIQ_J,Unselected,Consult component codebook before use,9141,98.7789064188459,804,100.0,1
+DIQ175V,DIQ_J,Unselected,Consult component codebook before use,9240,99.84871406959152,804,100.0,1
+DIQ175W,DIQ_J,Unselected,Consult component codebook before use,9249,99.9459693105684,804,100.0,1
+DIQ175X,DIQ_J,Unselected,Consult component codebook before use,9252,99.97838772422736,804,100.0,1
+DIQ180,DIQ_J,Unselected,Consult component codebook before use,3378,36.50313377998703,804,100.0,4
+DIQ050,DIQ_J,Treatment,Current insulin use; not medication adherence,357,3.8577912254160367,0,0.0,3
+DID060,DIQ_J,Unselected,Consult component codebook before use,9000,97.25524097687487,577,71.76616915422885,37
+DIQ060U,DIQ_J,Unselected,Consult component codebook before use,9009,97.35249621785174,583,72.51243781094527,2
+DIQ070,DIQ_J,Treatment,Current diabetic pill use; nonresponse may reflect questionnaire routing,7580,81.91052517830127,0,0.0,3
+DIQ230,DIQ_J,Monitoring,Last diabetes educator/dietitian/nutritionist visit; excludes doctors,8362,90.36092500540308,1,0.12437810945273632,6
+DIQ240,DIQ_J,Monitoring,One usual diabetes doctor/health professional,8362,90.36092500540308,1,0.12437810945273632,3
+DID250,DIQ_J,Monitoring,Visits to that usual doctor; missing if DIQ240 is No; 7777/9999 refused/don't know,8560,92.50054030689432,183,22.761194029850746,19
+DID260,DIQ_J,Monitoring,"Self/family glucose checks; 0 never, 777/999 refused/don't know; combine with units",8361,90.35011886751676,3,0.3731343283582089,14
+DIQ260U,DIQ_J,Monitoring,Glucose-check frequency unit: day/week/month/year,8541,92.29522368705425,165,20.522388059701495,4
+DIQ275,DIQ_J,Monitoring,Self-reported professional A1C testing in past year,8362,90.36092500540308,1,0.12437810945273632,3
+DIQ280,DIQ_J,Outcome-related,Self-reported last A1C; not measured LBXGH; avoid as a shortcut predictor,8507,91.92781499891939,133,16.54228855721393,63
+DIQ291,DIQ_J,Monitoring,Reported provider A1C goal; not a universal personalized threshold,8505,91.90620272314675,131,16.29353233830846,8
+DIQ300S,DIQ_J,Unselected,Consult component codebook before use,8370,90.44737410849363,2,0.24875621890547264,87
+DIQ300D,DIQ_J,Unselected,Consult component codebook before use,8370,90.44737410849363,2,0.24875621890547264,62
+DID310S,DIQ_J,Unselected,Consult component codebook before use,8368,90.42576183272098,1,0.12437810945273632,41
+DID310D,DIQ_J,Unselected,Consult component codebook before use,8368,90.42576183272098,1,0.12437810945273632,37
+DID320,DIQ_J,Unselected,Consult component codebook before use,8369,90.43656797060731,2,0.24875621890547264,97
+DID330,DIQ_J,Unselected,Consult component codebook before use,8423,91.02009941646855,48,5.970149253731343,33
+DID341,DIQ_J,Unselected,Consult component codebook before use,8372,90.46898638426626,4,0.4975124378109453,23
+DID350,DIQ_J,Unselected,Consult component codebook before use,8372,90.46898638426626,4,0.4975124378109453,14
+DIQ350U,DIQ_J,Unselected,Consult component codebook before use,8542,92.30602982494057,155,19.27860696517413,4
+DIQ360,DIQ_J,Unselected,Consult component codebook before use,8369,90.43656797060731,1,0.12437810945273632,6
+DIQ080,DIQ_J,Clinical history,Self-reported diabetes-related retinopathy,8369,90.43656797060731,1,0.12437810945273632,3
+LBXGH,GHB_J,Outcome,Measured HbA1c in percent; keep continuous value,3209,34.67689647719905,0,0.0,94
+BMDSTATS,BMX_J,Unselected,Consult component codebook before use,550,5.943375837475686,0,0.0,4
+BMXWT,BMX_J,Unselected,Consult component codebook before use,674,7.283336935379295,17,2.1144278606965177,1405
+BMIWT,BMX_J,Unselected,Consult component codebook before use,8838,95.50464663929111,764,95.02487562189054,3
+BMXRECUM,BMX_J,Unselected,Consult component codebook before use,8360,90.33931272963042,804,100.0,444
+BMIRECUM,BMX_J,Unselected,Consult component codebook before use,9230,99.74065269072834,804,100.0,1
+BMXHEAD,BMX_J,Unselected,Consult component codebook before use,9060,97.90360925005403,804,100.0,88
+BMIHEAD,BMX_J,Unselected,Consult component codebook before use,9254,100.0,804,100.0,0
+BMXHT,BMX_J,Unselected,Consult component codebook before use,1238,13.377998703263453,15,1.8656716417910446,1033
+BMIHT,BMX_J,Unselected,Consult component codebook before use,9155,98.93019234925437,784,97.51243781094527,2
+BMXBMI,BMX_J,Body size,Measured body mass index,1249,13.496866220012969,19,2.36318407960199,440
+BMXLEG,BMX_J,Unselected,Consult component codebook before use,2551,27.566457748000868,65,8.084577114427862,246
+BMILEG,BMX_J,Unselected,Consult component codebook before use,8920,96.39074994596932,753,93.65671641791045,1
+BMXARML,BMX_J,Unselected,Consult component codebook before use,1077,11.638210503566025,47,5.845771144278607,347
+BMIARML,BMX_J,Unselected,Consult component codebook before use,8907,96.25027015344716,770,95.77114427860697,1
+BMXARMC,BMX_J,Unselected,Consult component codebook before use,1081,11.681435055111303,48,5.970149253731343,393
+BMIARMC,BMX_J,Unselected,Consult component codebook before use,8904,96.2178517397882,770,95.77114427860697,1
+BMXWAIST,BMX_J,Unselected,Consult component codebook before use,1653,17.862545926086018,63,7.835820895522389,1035
+BMIWAIST,BMX_J,Unselected,Consult component codebook before use,8817,95.27771774367841,754,93.78109452736318,1
+BMXHIP,BMX_J,Unselected,Consult component codebook before use,3215,34.74173330451696,62,7.711442786069651,751
+BMIHIP,BMX_J,Unselected,Consult component codebook before use,8984,97.08234277069376,756,94.02985074626866,1
+PAQ605,PAQ_J,Lifestyle,"Vigorous work activity; 1 yes, 2 no, 7/9 refused/don't know",3398,36.71925653771343,0,0.0,3
+PAQ610,PAQ_J,Lifestyle,Days of vigorous work; blank may mean PAQ605=No; 77/99 special codes,7865,84.99027447590231,661,82.2139303482587,8
+PAD615,PAQ_J,Lifestyle,Daily vigorous work minutes; 7777/9999 special codes; use with days and gate,7873,85.07672357899287,661,82.2139303482587,28
+PAQ620,PAQ_J,Lifestyle,Moderate work activity,3398,36.71925653771343,0,0.0,3
+PAQ625,PAQ_J,Unselected,Consult component codebook before use,6815,73.64382969526692,520,64.6766169154229,8
+PAD630,PAQ_J,Unselected,Consult component codebook before use,6828,73.78430948778907,521,64.80099502487562,30
+PAQ635,PAQ_J,Lifestyle,Walking/bicycling for transport,3398,36.71925653771343,0,0.0,2
+PAQ640,PAQ_J,Unselected,Consult component codebook before use,7815,84.44996758158634,634,78.85572139303483,8
+PAD645,PAQ_J,Unselected,Consult component codebook before use,7824,84.54722282256321,635,78.98009950248756,34
+PAQ650,PAQ_J,Lifestyle,Vigorous recreational activity,3398,36.71925653771343,0,0.0,2
+PAQ655,PAQ_J,Unselected,Consult component codebook before use,7820,84.50399827101793,727,90.4228855721393,8
+PAD660,PAQ_J,Unselected,Consult component codebook before use,7823,84.5364166846769,727,90.4228855721393,28
+PAQ665,PAQ_J,Lifestyle,Moderate recreational activity,3398,36.71925653771343,0,0.0,2
+PAQ670,PAQ_J,Unselected,Consult component codebook before use,6946,75.05943375837477,558,69.40298507462687,8
+PAD675,PAQ_J,Unselected,Consult component codebook before use,6953,75.135076723579,559,69.5273631840796,30
+PAD680,PAQ_J,Lifestyle,"Daily sedentary minutes; zero valid, 7777/9999 refused/don't know",3408,36.82731791657661,2,0.24875621890547264,56
+HUQ010,HUQ_J,Health context,Self-rated general health category,0,0.0,0,0.0,7
+HUQ020,HUQ_J,Unselected,Consult component codebook before use,357,3.8577912254160367,0,0.0,4
+HUQ030,HUQ_J,Access,"Usual healthcare place: 1 yes, 2 none, 3 more than one place",0,0.0,0,0.0,4
+HUQ041,HUQ_J,Access,Usual healthcare setting; routed by HUQ030,1400,15.128593040847202,57,7.08955223880597,7
+HUQ051,HUQ_J,Utilization,"Categorical healthcare-visit bands, not raw visit counts",0,0.0,0,0.0,10
+HUQ061,HUQ_J,Unselected,Consult component codebook before use,7978,86.2113680570564,778,96.76616915422885,7
+HUQ071,HUQ_J,Utilization,Any overnight hospitalization in past year; not 30-day readmission,0,0.0,0,0.0,3
+HUD080,HUQ_J,Utilization,Hospitalization count category; 6 means six or more; conditional on HUQ071,8437,91.17138534687702,650,80.84577114427861,7
+HUQ090,HUQ_J,Unselected,Consult component codebook before use,1019,11.011454506159499,0,0.0,4

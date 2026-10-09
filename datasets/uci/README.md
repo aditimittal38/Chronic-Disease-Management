@@ -6,6 +6,59 @@ Identify demographic, clinical, treatment, and prior healthcare-utilization fact
 associated with recorded 30-day readmission among patients with diabetes.
 Readmission is the observed outcome, not proof of poor disease management.
 
+## Dataset and Rationale
+
+Use the UCI Diabetes 130-US Hospitals dataset (1999-2008) because it provides recorded readmission
+labels alongside clinical, treatment, discharge, and historical utilization information. The original
+file contains 101,766 encounters and 50 columns. The primary cohort contains 99,343 encounters from
+69,990 patients after the documented expired/hospice exclusions. Repeated encounters are retained.
+
+It supports discharge-time readmission analysis, not direct measurement of adherence or lifestyle.
+The hospital population and recorded-return outcome limit generalization beyond this study.
+
+## Features and Analysis
+
+| Group | Examples |
+| --- | --- |
+| Utilization | Prior inpatient, emergency, and outpatient visits; derived visit summaries |
+| Clinical | ICD-9 diagnosis groups, diagnosis count, stay duration, procedures |
+| Treatment | Inpatient medication counts/bands, insulin status, general and explicit dose-change indicators |
+| Patient/care context | Age groups, race, admission/discharge categories, payer and medical specialty |
+
+The cleaned cohort has 47 columns, and 15 derived columns produce a 62-column feature table.
+Expanded predictive models use 22 selected inputs, not all stored columns. Identifiers and outcome labels
+are excluded from predictors; redundant versions are not treated as independent evidence.
+
+Methods include patient-clustered adjusted logistic inference, patient-separated model evaluation,
+whole-patient bootstrap intervals, permutation importance, and fixed cohort/model sensitivities.
+
+## Major Findings
+
+- Early readmission occurs in **11.39%** of primary-cohort encounters.
+- Rates are **8.59%** with no prior inpatient visits versus **22.02%** with two or more.
+- Prior inpatient visits have adjusted OR **1.309** per visit (95% CI **1.292-1.327**), describing odds rather than probability.
+- Prior inpatient use and discharge disposition rank highest in both expanded models among tested predictors.
+- Gradient boosting has exploratory held-out ROC-AUC **0.668** and average precision **0.226**; discrimination remains modest.
+- Medication-change evidence is not consistent across sensitivity choices and does not establish protection.
+
+## Study Diagram
+
+```mermaid
+flowchart LR
+  inputs["Clinical records, prior utilization, treatment and discharge context"] --> analysis["Patient-clustered associations and patient-separated prediction"]
+  analysis --> outcome["Recorded readmission within 30 days"]
+```
+
+Care continuity and disease instability are possible connecting mechanisms, not demonstrated pathways.
+Discharge disposition is a recorded destination/care-setting category, not a measurement of follow-up quality.
+
+## Conclusion
+
+Prior hospital utilization and discharge context support exploratory readmission risk research.
+The findings do not prove preventability, treatment effects, or clinical deployment readiness.
+NHANES provides a separate HbA1c study, not external validation of this model; see the
+[project synthesis](../../reports/research_synthesis/README.md).
+
 ## Start Here
 
 Read the [final research report](reports/06_final_report/README.md) for the findings,
@@ -209,9 +262,9 @@ The script saves tables and plots separately without changing the data files.
 Encounter/patient identifiers and the original outcome are excluded from predictors.
 Fixed category definitions avoid fitting preprocessing on held-out patients.
 
-This initial analysis identifies adjusted associations, not a final predictive-importance ranking.
-Further work includes nonlinear effects, alternative adjustment sets, subgroup performance,
-patient-bootstrap uncertainty for evaluation metrics, and robustness to cohort rules.
+This step identifies adjusted associations rather than predictive importance. Step 5 subsequently
+adds nonlinear model comparison, alternative adjustments/cohorts, subgroup summaries,
+patient-bootstrap metric uncertainty, and permutation rankings. External validation remains unperformed.
 No clinical intervention or deployment claim follows from these findings.
 
 ## Step 5: Check Robustness and Predictive Importance
@@ -265,8 +318,8 @@ and a recorded end-to-end workflow are available.
 Independent external validation, repeated-split predictive stability, prospective
 clinical assessment, and action-threshold selection remain future research. They are
 not prerequisites for presenting this as an exploratory study, but they are necessary
-before stronger generalization or clinical-use claims. No additional patient dataset
-or clinical intervention evaluation has been performed.
+before stronger generalization or clinical-use claims. No independent readmission-validation dataset
+or clinical intervention evaluation has been used for this UCI study.
 
 ## Input, Channel, and Output
 

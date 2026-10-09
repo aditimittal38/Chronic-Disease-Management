@@ -1,0 +1,53 @@
+feature,value,participants
+activity_complete,1,792
+activity_complete,0,12
+activity_at_least_150_equivalent_minutes,0,406
+activity_at_least_150_equivalent_minutes,1,386
+activity_at_least_150_equivalent_minutes,Missing,12
+activity_total_exceeds_calendar_week,0,792
+activity_total_exceeds_calendar_week,Missing,12
+glucose_frequency_status,unit_converted,639
+glucose_frequency_status,explicit_never,160
+glucose_frequency_status,not_recorded,3
+glucose_frequency_status,dont_know,2
+insulin_use,0,577
+insulin_use,1,227
+oral_diabetes_med_use,1,588
+oral_diabetes_med_use,0,216
+usual_diabetes_professional,1,621
+usual_diabetes_professional,0,181
+usual_diabetes_professional,Missing,2
+a1c_test_past_year,1,673
+a1c_test_past_year,0,97
+a1c_test_past_year,Missing,34
+hospitalized_past_year,0,649
+hospitalized_past_year,1,154
+hospitalized_past_year,Missing,1
+usual_healthcare_place,1,747
+usual_healthcare_place,0,57
+diabetes_educator_past_year,0,595
+diabetes_educator_past_year,1,198
+diabetes_educator_past_year,Missing,11
+hba1c_at_least_8,0,586
+hba1c_at_least_8,1,218
+hba1c_at_least_7,1,404
+hba1c_at_least_7,0,400
+age_group,60-79,456
+age_group,40-59,216
+age_group,80+,97
+age_group,20-39,35
+bmi_group,30 or above,441
+bmi_group,25 to below 30,241
+bmi_group,18.5 to below 25,102
+bmi_group,Missing,19
+bmi_group,Below 18.5,1
+poverty_ratio_group,2 to below 5,229
+poverty_ratio_group,1 to below 2,227
+poverty_ratio_group,Below 1,125
+poverty_ratio_group,5 or above,118
+poverty_ratio_group,Missing,105
+education_group,Some college/AA,255
+education_group,Below high school,211
+education_group,High school/GED,189
+education_group,College or above,147
+education_group,Missing,2

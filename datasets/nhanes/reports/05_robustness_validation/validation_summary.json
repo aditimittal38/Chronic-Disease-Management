@@ -1,0 +1,185 @@
+{
+  "cycle": "2017-2018",
+  "universe_participants": 9254,
+  "analysis_domain": 804,
+  "initial_complete_cases": 651,
+  "initial_residual_survey_df": 5.0,
+  "alternative_models": 7,
+  "scenarios": [
+    {
+      "scenario": "reduced_adjustment",
+      "family": "gaussian",
+      "outcome": "LBXGH",
+      "selection": "primary",
+      "predictors": [
+        "age_per_10_years",
+        "female",
+        "bmi_per_5_units",
+        "poverty_ratio",
+        "insulin_use",
+        "oral_diabetes_med_use"
+      ],
+      "model_participants": 683,
+      "domain_excluded_for_this_specification": 121,
+      "residual_survey_df": 9.0,
+      "iterations": 2,
+      "binary_events": null
+    },
+    {
+      "scenario": "reduced_same_complete_cases",
+      "family": "gaussian",
+      "outcome": "LBXGH",
+      "selection": "original_complete_cases",
+      "predictors": [
+        "age_per_10_years",
+        "female",
+        "bmi_per_5_units",
+        "poverty_ratio",
+        "insulin_use",
+        "oral_diabetes_med_use"
+      ],
+      "model_participants": 651,
+      "domain_excluded_for_this_specification": 153,
+      "residual_survey_df": 9.0,
+      "iterations": 2,
+      "binary_events": null
+    },
+    {
+      "scenario": "top_code_flags",
+      "family": "gaussian",
+      "outcome": "LBXGH",
+      "selection": "primary",
+      "predictors": [
+        "age_per_10_years",
+        "female",
+        "bmi_per_5_units",
+        "poverty_ratio",
+        "insulin_use",
+        "oral_diabetes_med_use",
+        "age_80_plus",
+        "poverty_ratio_5_plus"
+      ],
+      "model_participants": 683,
+      "domain_excluded_for_this_specification": 121,
+      "residual_survey_df": 7.0,
+      "iterations": 2,
+      "binary_events": null
+    },
+    {
+      "scenario": "exclude_uncertain_pregnancy",
+      "family": "gaussian",
+      "outcome": "LBXGH",
+      "selection": "pregnancy_sensitivity",
+      "predictors": [
+        "age_per_10_years",
+        "female",
+        "bmi_per_5_units",
+        "poverty_ratio",
+        "insulin_use",
+        "oral_diabetes_med_use",
+        "usual_diabetes_professional",
+        "a1c_test_past_year",
+        "log1p_glucose_checks",
+        "log1p_activity_equivalents"
+      ],
+      "model_participants": 649,
+      "domain_excluded_for_this_specification": 155,
+      "residual_survey_df": 5.0,
+      "iterations": 2,
+      "binary_events": null
+    },
+    {
+      "scenario": "without_income_adjustment",
+      "family": "gaussian",
+      "outcome": "LBXGH",
+      "selection": "primary",
+      "predictors": [
+        "age_per_10_years",
+        "female",
+        "bmi_per_5_units",
+        "insulin_use",
+        "oral_diabetes_med_use",
+        "usual_diabetes_professional",
+        "a1c_test_past_year",
+        "log1p_glucose_checks",
+        "log1p_activity_equivalents"
+      ],
+      "model_participants": 737,
+      "domain_excluded_for_this_specification": 67,
+      "residual_survey_df": 6.0,
+      "iterations": 2,
+      "binary_events": null
+    },
+    {
+      "scenario": "hba1c_at_least_8",
+      "family": "binomial",
+      "outcome": "hba1c_at_least_8",
+      "selection": "original_complete_cases",
+      "predictors": [
+        "age_per_10_years",
+        "female",
+        "bmi_per_5_units",
+        "poverty_ratio",
+        "insulin_use",
+        "oral_diabetes_med_use",
+        "usual_diabetes_professional",
+        "a1c_test_past_year",
+        "log1p_glucose_checks",
+        "log1p_activity_equivalents"
+      ],
+      "model_participants": 651,
+      "domain_excluded_for_this_specification": 153,
+      "residual_survey_df": 5.0,
+      "iterations": 6,
+      "binary_events": 177
+    },
+    {
+      "scenario": "hba1c_at_least_7",
+      "family": "binomial",
+      "outcome": "hba1c_at_least_7",
+      "selection": "original_complete_cases",
+      "predictors": [
+        "age_per_10_years",
+        "female",
+        "bmi_per_5_units",
+        "poverty_ratio",
+        "insulin_use",
+        "oral_diabetes_med_use",
+        "usual_diabetes_professional",
+        "a1c_test_past_year",
+        "log1p_glucose_checks",
+        "log1p_activity_equivalents"
+      ],
+      "model_participants": 651,
+      "domain_excluded_for_this_specification": 153,
+      "residual_survey_df": 5.0,
+      "iterations": 6,
+      "binary_events": 318
+    }
+  ],
+  "input_fingerprints": {
+    "data/processed/nhanes_2017_2018_features.csv": "511d0e6f0773a9d0f4e08d46a95d239c84b88ad5a90e237454df74dc7d696a02",
+    "reports/04_outcome_analysis/analysis_summary.json": "51e33c15239cd8b047fafbd66dfd3f559523667f6a00fe48a5d1a496fbdd894d",
+    "reports/04_outcome_analysis/adjusted_hba1c_coefficients.csv": "1888055db7f5e4097847948ee4fbc3163b948f2548b332e9205a9c4f85b86aa5",
+    "reports/04_outcome_analysis/weighted_outcomes.csv": "9bb869311cb734dec08354c12ae5b8bb650ddad2b3467decd4e4af0fc821c9b5"
+  },
+  "package_versions": {
+    "svy": "0.32.1",
+    "svy-rs": "0.18.0",
+    "pandas": "2.2.3",
+    "numpy": "2.5.1",
+    "scipy": "1.18.1",
+    "statsmodels": "0.15.0"
+  },
+  "notes": [
+    "Fixed exploratory sensitivity specifications; not selection of a final model using p-values.",
+    "All models use MEC weights, strata and PSUs; full-universe where-domain inference is retained.",
+    "Reduced same-case model isolates adjustment changes from complete-case sample changes.",
+    "Top-code flags permit separate shifts for age 80+ and poverty ratio 5+ without inventing actual values.",
+    "Omitting income increases completeness but removes socioeconomic adjustment; not a remedy for missingness.",
+    "Secondary logit models use original complete cases; their log-odds/ORs are not comparable to Gaussian percentage-point effects.",
+    "FDR is computed within each model, not across all sensitivity scenarios; this is not confirmatory testing.",
+    "Response coverage and composition tables do not adjust item nonresponse or establish missing-at-random assumptions.",
+    "No imputation, prediction validation, external evaluation, or causal treatment effects are established."
+  ]
+}

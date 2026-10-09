@@ -1,0 +1,8 @@
+step,remaining,excluded_at_step
+Demographic participant universe,9254,0
+Age 20 or older,5569,3685
+Self-reported doctor-diagnosed diabetes (DIQ010=1),876,4693
+Exclude known pregnancy (RIDEXPRG=1),876,0
+Measured HbA1c available,804,72
+Positive MEC examination weight,804,0
+Survey stratum and PSU available,804,0
