@@ -1,0 +1,16 @@
+feature,type,source_columns,definition
+readmitted_30d,binary_target,readmitted,1 for <30; 0 for >30 or NO. Never use either outcome column as a predictor.
+total_previous_visits,count,"number_outpatient, number_emergency, number_inpatient",Sum of the three recorded prior visit counts; not a measure of adherence.
+prior_acute_visits,count,"number_emergency, number_inpatient",Emergency plus inpatient visit counts; excludes outpatient visits.
+medication_burden_band,category,num_medications,"Low: 0-5; Moderate: 6-14; High: 15+. Counts inpatient medications, not verified long-term polypharmacy."
+diag_1_group,category,diag_1,"Primary diagnosis: Diabetes (250.xx), Circulatory (390-459 or 785.xx), Respiratory (460-519 or 786.xx), Other, or Unknown."
+diag_2_group,category,diag_2,Secondary diagnosis grouped using the same ICD-9 rules as diag_1_group.
+diag_3_group,category,diag_3,Third diagnosis grouped using the same ICD-9 rules as diag_1_group.
+medication_changed,binary,change,"1 for Ch; 0 for No. General recorded regimen-change flag, not necessarily an explicit dose change."
+any_drug_dose_changed,binary,21 retained diabetes drug columns,1 if any drug is Up or Down; 0 otherwise. Not interchangeable with the general change flag.
+active_diabetes_drug_count,count,21 retained diabetes drug columns,"Count drug fields with Steady, Up, or Down. Combination-drug fields count as one field, not separate ingredients."
+insulin_used,binary,insulin,"1 for Steady, Up, or Down; 0 for No."
+diabetes_med_prescribed,binary,diabetesMed,1 for Yes; 0 for No. Mirrors the recorded diabetes-medication indicator.
+a1c_test_recorded,binary,A1Cresult,"0 for None; 1 for Norm, >7, or >8. Test documentation, not a continuous HbA1c measurement."
+glucose_test_recorded,binary,max_glu_serum,"0 for None; 1 for Norm, >200, or >300. Does not establish glycemic control."
+age_group,category,age,"Combine recorded age bands into Under 40, 40-59, 60-79, or 80+. Exact ages are not inferred."

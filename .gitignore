@@ -1,0 +1,7 @@
+__pycache__/
+*.py[cod]
+.venv/
+.ipynb_checkpoints/
+datasets/*/data/raw/
+datasets/*/data/processed/
+datasets/*/reports/**/held_out_predictions.csv

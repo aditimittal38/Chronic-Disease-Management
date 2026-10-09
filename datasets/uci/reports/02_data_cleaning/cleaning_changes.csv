@@ -1,0 +1,11 @@
+column,reason,affected_encounters
+admission_source_id,unavailable_administrative_category,6854
+admission_type_id,unavailable_administrative_category,10144
+diag_1,missing_category,20
+diag_2,missing_category,356
+diag_3,missing_category,1419
+discharge_disposition_id,unavailable_administrative_category,4680
+gender,invalid_gender_category,3
+medical_specialty,missing_category,48616
+payer_code,missing_category,39398
+race,missing_category,2234

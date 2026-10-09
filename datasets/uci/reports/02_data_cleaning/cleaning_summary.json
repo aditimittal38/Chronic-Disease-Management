@@ -1,0 +1,146 @@
+{
+  "source_file": "data/raw/diabetic_data.csv",
+  "source_sha256": "0689e7ec031237dc63031b938805c48377748761a3b26acab621567afa24df97",
+  "cleaned_file": "data/processed/diabetes_cleaned.csv",
+  "raw_encounters": 101766,
+  "cleaned_encounters": 99343,
+  "excluded_encounters": 2423,
+  "excluded_counts_by_discharge_code": {
+    "11": 1642,
+    "13": 399,
+    "14": 372,
+    "19": 8,
+    "20": 2
+  },
+  "raw_columns": 50,
+  "cleaned_columns": 47,
+  "dropped_columns": [
+    "citoglipton",
+    "examide",
+    "weight"
+  ],
+  "unique_patients": 69990,
+  "patients_with_multiple_encounters": 16341,
+  "readmission_counts": {
+    "NO": 52527,
+    ">30": 35502,
+    "<30": 11314
+  },
+  "early_readmission_percent": 11.3888,
+  "unknown_category_counts": {
+    "encounter_id": 0,
+    "patient_nbr": 0,
+    "race": 2234,
+    "gender": 3,
+    "age": 0,
+    "admission_type_id": 10144,
+    "discharge_disposition_id": 4680,
+    "admission_source_id": 6854,
+    "payer_code": 39398,
+    "medical_specialty": 48616,
+    "diag_1": 20,
+    "diag_2": 356,
+    "diag_3": 1419,
+    "max_glu_serum": 0,
+    "A1Cresult": 0,
+    "metformin": 0,
+    "repaglinide": 0,
+    "nateglinide": 0,
+    "chlorpropamide": 0,
+    "glimepiride": 0,
+    "acetohexamide": 0,
+    "glipizide": 0,
+    "glyburide": 0,
+    "tolbutamide": 0,
+    "pioglitazone": 0,
+    "rosiglitazone": 0,
+    "acarbose": 0,
+    "miglitol": 0,
+    "troglitazone": 0,
+    "tolazamide": 0,
+    "insulin": 0,
+    "glyburide-metformin": 0,
+    "glipizide-metformin": 0,
+    "glimepiride-pioglitazone": 0,
+    "metformin-rosiglitazone": 0,
+    "metformin-pioglitazone": 0,
+    "change": 0,
+    "diabetesMed": 0,
+    "readmitted": 0
+  },
+  "lab_None_counts": {
+    "A1Cresult": 82509,
+    "max_glu_serum": 94191
+  },
+  "changes": [
+    {
+      "column": "admission_source_id",
+      "reason": "unavailable_administrative_category",
+      "affected_encounters": 6854
+    },
+    {
+      "column": "admission_type_id",
+      "reason": "unavailable_administrative_category",
+      "affected_encounters": 10144
+    },
+    {
+      "column": "diag_1",
+      "reason": "missing_category",
+      "affected_encounters": 20
+    },
+    {
+      "column": "diag_2",
+      "reason": "missing_category",
+      "affected_encounters": 356
+    },
+    {
+      "column": "diag_3",
+      "reason": "missing_category",
+      "affected_encounters": 1419
+    },
+    {
+      "column": "discharge_disposition_id",
+      "reason": "unavailable_administrative_category",
+      "affected_encounters": 4680
+    },
+    {
+      "column": "gender",
+      "reason": "invalid_gender_category",
+      "affected_encounters": 3
+    },
+    {
+      "column": "medical_specialty",
+      "reason": "missing_category",
+      "affected_encounters": 48616
+    },
+    {
+      "column": "payer_code",
+      "reason": "missing_category",
+      "affected_encounters": 39398
+    },
+    {
+      "column": "race",
+      "reason": "missing_category",
+      "affected_encounters": 2234
+    }
+  ],
+  "numeric_columns": [
+    "num_lab_procedures",
+    "num_medications",
+    "num_procedures",
+    "number_diagnoses",
+    "number_emergency",
+    "number_inpatient",
+    "number_outpatient",
+    "time_in_hospital"
+  ],
+  "categorical_administrative_columns": [
+    "admission_source_id",
+    "admission_type_id",
+    "discharge_disposition_id"
+  ],
+  "identifier_columns": [
+    "encounter_id",
+    "patient_nbr"
+  ]
+}

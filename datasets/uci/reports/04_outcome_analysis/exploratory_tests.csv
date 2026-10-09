@@ -1,0 +1,20 @@
+variable,test,statistic,degrees_of_freedom,p_value,note,fdr_adjusted_p
+inpatient_history_band,Chi-square,1246.067907687371,2.0,2.6290073926351825e-271,One encounter per patient,4.469312567479811e-270
+age_group,Chi-square,165.88868121066827,3.0,9.82140737408256e-36,One encounter per patient,2.7827320893233916e-35
+gender,Chi-square,0.3955070638795672,2.0,,Sparse expected cells; asymptotic p-value withheld,
+race,Chi-square,32.52658029616011,5.0,4.672275949873464e-06,One encounter per patient,6.109899319065299e-06
+diag_1_group,Chi-square,33.4920772096655,4.0,,Sparse expected cells; asymptotic p-value withheld,
+medication_burden_band,Chi-square,148.26186385935316,2.0,6.38771196374336e-33,One encounter per patient,1.357388792295464e-32
+insulin,Chi-square,75.1745103420973,3.0,3.324328347657183e-16,One encounter per patient,5.651358191017211e-16
+medication_changed,Chi-square,19.40107533775161,1.0,1.0594738727677297e-05,One encounter per patient,1.2865039883608146e-05
+any_drug_dose_changed,Chi-square,27.21703237542301,1.0,1.8184958558596102e-07,One encounter per patient,2.5762024624677807e-07
+A1Cresult,Chi-square,16.517033410802952,3.0,0.0008882122078530579,One encounter per patient,0.0010066405022334656
+max_glu_serum,Chi-square,8.000022697346335,3.0,0.04601123660583616,One encounter per patient,0.048886938893700924
+number_inpatient,Mann-Whitney U,202110087.5,,5.946448560022421e-237,"One encounter per patient; distribution comparison, not necessarily a median test",5.054481276019058e-236
+number_emergency,Mann-Whitney U,177545862.0,,8.364331648344484e-35,"One encounter per patient; distribution comparison, not necessarily a median test",2.0313376860265176e-34
+number_outpatient,Mann-Whitney U,174633779.0,,2.67187908868119e-10,"One encounter per patient; distribution comparison, not necessarily a median test",4.129267682507294e-10
+num_medications,Mann-Whitney U,187314242.0,,9.755930837165818e-38,"One encounter per patient; distribution comparison, not necessarily a median test",3.3170164846363777e-37
+number_diagnoses,Mann-Whitney U,187185565.0,,5.578369973569991e-41,"One encounter per patient; distribution comparison, not necessarily a median test",2.3708072387672463e-40
+time_in_hospital,Mann-Whitney U,191351201.0,,1.5311424940048381e-56,"One encounter per patient; distribution comparison, not necessarily a median test",8.676474132694083e-56
+num_lab_procedures,Mann-Whitney U,183151082.0,,5.810283703046287e-23,"One encounter per patient; distribution comparison, not necessarily a median test",1.0974980327976319e-22
+num_procedures,Mann-Whitney U,170948117.0,,0.21354910140476935,"One encounter per patient; distribution comparison, not necessarily a median test",0.21354910140476935

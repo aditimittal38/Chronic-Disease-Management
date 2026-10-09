@@ -1,0 +1,57 @@
+{
+  "input_file": "data/processed/diabetes_features.csv",
+  "input_sha256": "3a08afaff1a4931efa6e3d4f0e762cca5117b29f9bb86e9ad7bf3fee559d9a75",
+  "encounters": 99343,
+  "patients": 69990,
+  "early_readmissions": 11314,
+  "early_readmission_percent": 11.388824577474004,
+  "exploratory_test_patients": 69990,
+  "model_formula": "readmitted_30d ~ number_inpatient + number_emergency + number_outpatient + num_medications + number_diagnoses + time_in_hospital + C(age_group, Treatment(reference=\"Under 40\")) + C(race, Treatment(reference=\"Caucasian\")) + C(diag_1_group, Treatment(reference=\"Other\")) + C(insulin, Treatment(reference=\"No\")) + C(A1Cresult, Treatment(reference=\"None\")) + medication_changed",
+  "clustered_by": "patient_nbr",
+  "model_converged": true,
+  "mcfadden_pseudo_r_squared": 0.03680002195703569,
+  "evaluation": {
+    "seed": 42,
+    "held_out_patient_fraction": 0.2,
+    "training_encounters": 79522,
+    "test_encounters": 19821,
+    "training_patients": 55992,
+    "test_patients": 13998,
+    "overlapping_patients": 0,
+    "test_prevalence": 0.11134655163715251,
+    "training_prevalence": 0.11452176756117805,
+    "roc_auc": 0.6256166895499415,
+    "average_precision": 0.18875895275039292,
+    "brier_score": 0.09645228348200872,
+    "baseline_brier_score": 0.09895857907183164,
+    "log_loss": 0.33850917858664725,
+    "threshold_metrics": [
+      {
+        "threshold": 0.2,
+        "precision": 0.26881720430107525,
+        "recall": 0.12460353420933394,
+        "true_negatives": 16866,
+        "false_positives": 748,
+        "false_negatives": 1932,
+        "true_positives": 275
+      },
+      {
+        "threshold": 0.5,
+        "precision": 0.5,
+        "recall": 0.016311735387403714,
+        "true_negatives": 17578,
+        "false_positives": 36,
+        "false_negatives": 2171,
+        "true_positives": 36
+      }
+    ]
+  },
+  "package_versions": {
+    "pandas": "2.2.3",
+    "numpy": "2.5.1",
+    "scipy": "1.18.1",
+    "statsmodels": "0.15.0",
+    "scikit-learn": "1.9.1",
+    "matplotlib": "3.11.2"
+  }
+}

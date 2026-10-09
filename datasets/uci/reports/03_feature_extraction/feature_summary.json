@@ -1,0 +1,185 @@
+{
+  "input_file": "data/processed/diabetes_cleaned.csv",
+  "input_sha256": "9bb1a8dcaa61bcef9c0f76e9ed190061989e399427c58d4f78200390af08cb6e",
+  "output_file": "data/processed/diabetes_features.csv",
+  "encounters": 99343,
+  "original_columns": 47,
+  "derived_columns": 15,
+  "total_columns": 62,
+  "target": "readmitted_30d",
+  "target_counts": {
+    "0": 88029,
+    "1": 11314
+  },
+  "exclude_from_predictors": [
+    "encounter_id",
+    "patient_nbr",
+    "readmitted",
+    "readmitted_30d"
+  ],
+  "feature_distributions": {
+    "readmitted_30d": {
+      "0": 88029,
+      "1": 11314
+    },
+    "total_previous_visits": {
+      "0": 54676,
+      "3": 5698,
+      "1": 19454,
+      "2": 9753,
+      "6": 1275,
+      "7": 849,
+      "10": 261,
+      "5": 1991,
+      "4": 3447,
+      "14": 86,
+      "15": 96,
+      "8": 543,
+      "12": 135,
+      "9": 423,
+      "13": 97,
+      "11": 246,
+      "18": 31,
+      "17": 59,
+      "25": 7,
+      "27": 9,
+      "23": 4,
+      "30": 4,
+      "16": 66,
+      "31": 2,
+      "19": 32,
+      "20": 22,
+      "21": 13,
+      "22": 14,
+      "35": 5,
+      "49": 1,
+      "34": 1,
+      "38": 2,
+      "28": 2,
+      "26": 5,
+      "24": 9,
+      "32": 2,
+      "42": 2,
+      "40": 1,
+      "36": 5,
+      "33": 2,
+      "29": 5,
+      "37": 2,
+      "48": 1,
+      "80": 1,
+      "68": 2,
+      "61": 1,
+      "41": 1
+    },
+    "prior_acute_visits": {
+      "0": 61741,
+      "1": 19619,
+      "2": 8455,
+      "3": 4128,
+      "7": 424,
+      "5": 1100,
+      "4": 2108,
+      "6": 712,
+      "13": 52,
+      "8": 276,
+      "10": 130,
+      "15": 51,
+      "9": 196,
+      "11": 96,
+      "25": 3,
+      "27": 3,
+      "16": 32,
+      "14": 46,
+      "31": 2,
+      "12": 68,
+      "17": 25,
+      "18": 15,
+      "19": 14,
+      "20": 11,
+      "21": 7,
+      "22": 4,
+      "46": 1,
+      "33": 1,
+      "24": 2,
+      "26": 3,
+      "32": 2,
+      "48": 1,
+      "23": 2,
+      "28": 1,
+      "29": 1,
+      "30": 1,
+      "35": 2,
+      "78": 1,
+      "36": 3,
+      "37": 1,
+      "66": 2,
+      "58": 1
+    },
+    "medication_burden_band": {
+      "Low": 4938,
+      "High": 50879,
+      "Moderate": 43526
+    },
+    "diag_1_group": {
+      "Diabetes": 8661,
+      "Other": 47047,
+      "Circulatory": 29681,
+      "Respiratory": 13934,
+      "Unknown": 20
+    },
+    "diag_2_group": {
+      "Unknown": 356,
+      "Diabetes": 12705,
+      "Other": 44734,
+      "Circulatory": 31158,
+      "Respiratory": 10390
+    },
+    "diag_3_group": {
+      "Unknown": 1419,
+      "Other": 44340,
+      "Circulatory": 29600,
+      "Diabetes": 16979,
+      "Respiratory": 7005
+    },
+    "medication_changed": {
+      "0": 53221,
+      "1": 46122
+    },
+    "any_drug_dose_changed": {
+      "0": 72323,
+      "1": 27020
+    },
+    "active_diabetes_drug_count": {
+      "0": 22624,
+      "1": 46030,
+      "2": 21595,
+      "3": 7707,
+      "4": 1324,
+      "5": 58,
+      "6": 5
+    },
+    "insulin_used": {
+      "0": 46379,
+      "1": 52964
+    },
+    "diabetes_med_prescribed": {
+      "0": 22624,
+      "1": 76719
+    },
+    "a1c_test_recorded": {
+      "0": 82509,
+      "1": 16834
+    },
+    "glucose_test_recorded": {
+      "0": 94191,
+      "1": 5152
+    },
+    "age_group": {
+      "Under 40": 6263,
+      "40-59": 26667,
+      "60-79": 47390,
+      "80+": 19023
+    }
+  },
+  "general_change_without_explicit_dose_change": 19102
+}

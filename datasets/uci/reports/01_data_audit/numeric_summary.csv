@@ -1,0 +1,9 @@
+column,valid_count,missing_count,invalid_integer_count,negative_count,min,q25,median,q75,max,mean
+time_in_hospital,101766,0,0,0,1,2.0,4.0,6.0,14,4.396
+num_lab_procedures,101766,0,0,0,1,31.0,44.0,57.0,132,43.0956
+num_procedures,101766,0,0,0,0,0.0,1.0,2.0,6,1.3397
+num_medications,101766,0,0,0,1,10.0,15.0,20.0,81,16.0218
+number_outpatient,101766,0,0,0,0,0.0,0.0,0.0,42,0.3694
+number_emergency,101766,0,0,0,0,0.0,0.0,0.0,76,0.1978
+number_inpatient,101766,0,0,0,0,0.0,0.0,1.0,21,0.6356
+number_diagnoses,101766,0,0,0,1,6.0,8.0,9.0,16,7.4226

@@ -1,0 +1,17 @@
+{
+  "report": "reports/06_final_report/README.md",
+  "evidence_files": {
+    "reports/01_data_audit/audit_summary.json": "25562672eb62a4cef5dea64434bf33f2526d44ec7a39f0b927404311d9b4da2a",
+    "reports/02_data_cleaning/cleaning_summary.json": "34f17e345647bd0640be3b431a1020509f30b7bdc6055d844c40483a1b73cff2",
+    "reports/03_feature_extraction/feature_summary.json": "0c58926a3b42c1fd319f44cbaa49599ec06b9ee53e6b247f7eb0b9f81fd6a168",
+    "reports/04_outcome_analysis/analysis_summary.json": "dbf11acf128f51c5c2f872ed77da3b78e8b586ba41517e079568cc4b7908718c",
+    "reports/05_robustness_validation/validation_summary.json": "4a726452df95e1beffa90f2fb2e1d76cc1ed224bbcf44e2e5d80da801113f9f1",
+    "reports/04_outcome_analysis/readmission_rates.csv": "1fd12b1841f43b69c70b102248bbacd0d116c8496502415de20d1c7afcf09463",
+    "reports/04_outcome_analysis/adjusted_odds_ratios.csv": "5a0c9f4716b9e9a2816c950c97d667193064d9984bb37d921973ba47917a1265",
+    "reports/05_robustness_validation/predictive_importance.csv": "b1b08585b5f8d79e9a995708b028e2010fb2b70f081c8fd55151ce851dc87b1c",
+    "reports/05_robustness_validation/model_comparison.csv": "d26b602831edc71cfa8858781d9728e11332d5a6ab495ec9200c4e1d2f9a1a00",
+    "reports/05_robustness_validation/bootstrap_intervals.csv": "6bb568e5126a62657716cfd11eab6a735fc46fd16d0f84c464a26a267bf14ce0",
+    "reports/05_robustness_validation/sensitivity_odds_ratios.csv": "d97ce0d3d4f0a6177cef083dc36413752dc9ce8040cb94f94ae2b9608d401d14"
+  },
+  "research_scope": "Exploratory observational associations and internal predictive evaluation"
+}

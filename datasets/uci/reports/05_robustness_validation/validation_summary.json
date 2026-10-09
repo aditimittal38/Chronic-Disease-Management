@@ -1,0 +1,164 @@
+{
+  "input_fingerprints": {
+    "data/processed/diabetes_features.csv": "3a08afaff1a4931efa6e3d4f0e762cca5117b29f9bb86e9ad7bf3fee559d9a75",
+    "data/raw/diabetic_data.csv": "0689e7ec031237dc63031b938805c48377748761a3b26acab621567afa24df97",
+    "reports/04_outcome_analysis/analysis_summary.json": "dbf11acf128f51c5c2f872ed77da3b78e8b586ba41517e079568cc4b7908718c",
+    "reports/04_outcome_analysis/held_out_predictions.csv": "0c22d631845bf7a0006b5f837e11fa4334f56af08d304fda597f161ede379df8",
+    "reports/04_outcome_analysis/adjusted_odds_ratios.csv": "5a0c9f4716b9e9a2816c950c97d667193064d9984bb37d921973ba47917a1265"
+  },
+  "split": {
+    "seed": 42,
+    "training_encounters": 79522,
+    "test_encounters": 19821,
+    "training_patients": 55992,
+    "test_patients": 13998,
+    "overlapping_patients": 0,
+    "test_prevalence": 0.11134655163715251
+  },
+  "bootstrap_repetitions": 200,
+  "permutation_repetitions": 5,
+  "predictors": [
+    "number_inpatient",
+    "number_emergency",
+    "number_outpatient",
+    "num_medications",
+    "number_diagnoses",
+    "time_in_hospital",
+    "num_lab_procedures",
+    "num_procedures",
+    "medication_changed",
+    "age_group",
+    "gender",
+    "race",
+    "diag_1_group",
+    "diag_2_group",
+    "diag_3_group",
+    "insulin",
+    "A1Cresult",
+    "max_glu_serum",
+    "admission_type_id",
+    "discharge_disposition_id",
+    "payer_code",
+    "medical_specialty"
+  ],
+  "feature_groups": {
+    "prior_utilization": [
+      "number_inpatient",
+      "number_emergency",
+      "number_outpatient"
+    ],
+    "demographics": [
+      "age_group",
+      "gender",
+      "race"
+    ],
+    "clinical_burden": [
+      "diag_1_group",
+      "diag_2_group",
+      "diag_3_group",
+      "number_diagnoses",
+      "time_in_hospital",
+      "num_lab_procedures",
+      "num_procedures"
+    ],
+    "treatment": [
+      "num_medications",
+      "medication_changed",
+      "insulin"
+    ],
+    "lab_results_and_testing": [
+      "A1Cresult",
+      "max_glu_serum"
+    ],
+    "care_context": [
+      "admission_type_id",
+      "discharge_disposition_id",
+      "payer_code",
+      "medical_specialty"
+    ]
+  },
+  "model_settings": {
+    "expanded_logistic": {
+      "C": 1.0,
+      "class_weight": null,
+      "dual": false,
+      "fit_intercept": true,
+      "intercept_scaling": 1,
+      "l1_ratio": 0.0,
+      "max_iter": 1000,
+      "n_jobs": null,
+      "penalty": "deprecated",
+      "random_state": 42,
+      "solver": "lbfgs",
+      "tol": 0.0001,
+      "verbose": 0,
+      "warm_start": false
+    },
+    "hist_gradient_boosting": {
+      "categorical_features": "from_dtype",
+      "class_weight": null,
+      "early_stopping": false,
+      "interaction_cst": null,
+      "l2_regularization": 5.0,
+      "learning_rate": 0.08,
+      "loss": "log_loss",
+      "max_bins": 255,
+      "max_depth": null,
+      "max_features": 1.0,
+      "max_iter": 100,
+      "max_leaf_nodes": 15,
+      "min_samples_leaf": 80,
+      "monotonic_cst": null,
+      "n_iter_no_change": 10,
+      "random_state": 42,
+      "scoring": "loss",
+      "tol": 1e-07,
+      "validation_fraction": 0.1,
+      "verbose": 0,
+      "warm_start": false
+    }
+  },
+  "sensitivity_scenarios": [
+    {
+      "scenario": "one_encounter_per_patient",
+      "encounters": 69990,
+      "patients": 69990,
+      "early_readmissions": 5228,
+      "formula": "readmitted_30d ~ number_inpatient + number_emergency + number_outpatient + num_medications + number_diagnoses + time_in_hospital + C(age_group, Treatment(reference=\"Under 40\")) + C(race, Treatment(reference=\"Caucasian\")) + C(diag_1_group, Treatment(reference=\"Other\")) + C(insulin, Treatment(reference=\"No\")) + C(A1Cresult, Treatment(reference=\"None\")) + medication_changed",
+      "converged": true
+    },
+    {
+      "scenario": "log_utilization",
+      "encounters": 99343,
+      "patients": 69990,
+      "early_readmissions": 11314,
+      "formula": "readmitted_30d ~ np.log1p(number_inpatient) + np.log1p(number_emergency) + np.log1p(number_outpatient) + num_medications + number_diagnoses + time_in_hospital + C(age_group, Treatment(reference=\"Under 40\")) + C(race, Treatment(reference=\"Caucasian\")) + C(diag_1_group, Treatment(reference=\"Other\")) + C(insulin, Treatment(reference=\"No\")) + C(A1Cresult, Treatment(reference=\"None\")) + medication_changed",
+      "converged": true
+    },
+    {
+      "scenario": "expanded_adjustment",
+      "encounters": 99343,
+      "patients": 69990,
+      "early_readmissions": 11314,
+      "formula": "readmitted_30d ~ number_inpatient + number_emergency + number_outpatient + num_medications + number_diagnoses + time_in_hospital + C(age_group, Treatment(reference=\"Under 40\")) + C(race, Treatment(reference=\"Caucasian\")) + C(diag_1_group, Treatment(reference=\"Other\")) + C(insulin, Treatment(reference=\"No\")) + C(A1Cresult, Treatment(reference=\"None\")) + medication_changed + num_lab_procedures + num_procedures + specialty_recorded + payer_recorded + C(admission_group, Treatment(reference=\"Emergency\")) + C(discharge_group, Treatment(reference=\"Home\")) + C(diag_2_group, Treatment(reference=\"Other\")) + C(diag_3_group, Treatment(reference=\"Other\"))",
+      "converged": true
+    },
+    {
+      "scenario": "hospice_included_deaths_excluded",
+      "encounters": 100114,
+      "patients": 70439,
+      "early_readmissions": 11357,
+      "formula": "readmitted_30d ~ number_inpatient + number_emergency + number_outpatient + num_medications + number_diagnoses + time_in_hospital + C(age_group, Treatment(reference=\"Under 40\")) + C(race, Treatment(reference=\"Caucasian\")) + C(diag_1_group, Treatment(reference=\"Other\")) + C(insulin, Treatment(reference=\"No\")) + C(A1Cresult, Treatment(reference=\"None\")) + medication_changed",
+      "converged": true
+    }
+  ],
+  "package_versions": {
+    "pandas": "2.2.3",
+    "numpy": "2.5.1",
+    "scipy": "1.18.1",
+    "statsmodels": "0.15.0",
+    "scikit-learn": "1.9.1",
+    "matplotlib": "3.11.2",
+    "threadpoolctl": "3.7.0"
+  }
+}

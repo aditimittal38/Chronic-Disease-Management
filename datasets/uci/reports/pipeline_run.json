@@ -1,0 +1,89 @@
+{
+  "mode": "full_workflow",
+  "started_utc": "2026-10-09T06:50:05.758856+00:00",
+  "status": "passed",
+  "interpreter": "C:\\Users\\z0054ufe\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+  "python_version": "3.13.14",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "package_versions": {
+    "pandas": "2.2.3",
+    "numpy": "2.5.1",
+    "scipy": "1.18.1",
+    "statsmodels": "0.15.0",
+    "scikit-learn": "1.9.1",
+    "matplotlib": "3.11.2",
+    "threadpoolctl": "3.7.0"
+  },
+  "steps": [
+    {
+      "name": "Method regression checks",
+      "command": [
+        "C:\\Users\\z0054ufe\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "scripts/05_robustness_validation",
+        "-p",
+        "test_validation.py",
+        "-v"
+      ],
+      "status": "passed",
+      "duration_seconds": 2.25
+    },
+    {
+      "name": "Dataset audit",
+      "command": [
+        "C:\\Users\\z0054ufe\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+        "C:\\Users\\z0054ufe\\Desktop\\clg\\FinTech\\Chronic-Disease-Management\\datasets\\uci\\scripts\\01_data_audit\\data_audit.py"
+      ],
+      "status": "passed",
+      "duration_seconds": 2.73
+    },
+    {
+      "name": "Data cleaning",
+      "command": [
+        "C:\\Users\\z0054ufe\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+        "C:\\Users\\z0054ufe\\Desktop\\clg\\FinTech\\Chronic-Disease-Management\\datasets\\uci\\scripts\\02_data_cleaning\\data_cleaning.py"
+      ],
+      "status": "passed",
+      "duration_seconds": 3.72
+    },
+    {
+      "name": "Feature extraction",
+      "command": [
+        "C:\\Users\\z0054ufe\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+        "C:\\Users\\z0054ufe\\Desktop\\clg\\FinTech\\Chronic-Disease-Management\\datasets\\uci\\scripts\\03_feature_extraction\\feature_extraction.py"
+      ],
+      "status": "passed",
+      "duration_seconds": 2.7
+    },
+    {
+      "name": "Outcome analysis",
+      "command": [
+        "C:\\Users\\z0054ufe\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+        "C:\\Users\\z0054ufe\\Desktop\\clg\\FinTech\\Chronic-Disease-Management\\datasets\\uci\\scripts\\04_outcome_analysis\\outcome_analysis.py"
+      ],
+      "status": "passed",
+      "duration_seconds": 6.67
+    },
+    {
+      "name": "Robustness and importance",
+      "command": [
+        "C:\\Users\\z0054ufe\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+        "C:\\Users\\z0054ufe\\Desktop\\clg\\FinTech\\Chronic-Disease-Management\\datasets\\uci\\scripts\\05_robustness_validation\\robustness_validation.py"
+      ],
+      "status": "passed",
+      "duration_seconds": 46.38
+    }
+  ],
+  "raw_inputs_before": {
+    "data/raw/diabetic_data.csv": "0689e7ec031237dc63031b938805c48377748761a3b26acab621567afa24df97",
+    "data/raw/IDS_mapping.csv": "f1bb82b471cb34649352597572c9b1fb00bd27f77b9f5a22a03dc3eb1039749e"
+  },
+  "raw_inputs_after": {
+    "data/raw/diabetic_data.csv": "0689e7ec031237dc63031b938805c48377748761a3b26acab621567afa24df97",
+    "data/raw/IDS_mapping.csv": "f1bb82b471cb34649352597572c9b1fb00bd27f77b9f5a22a03dc3eb1039749e"
+  },
+  "finished_utc": "2026-10-09T06:51:10.400056+00:00"
+}

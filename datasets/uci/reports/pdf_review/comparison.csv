@@ -1,0 +1,30 @@
+metric,pdf_value,verified_value,status,notes
+raw_encounters,101766,101766,match,Raw file
+raw_columns,50,50,match,Two identifiers one outcome and 47 other fields
+excluded_encounters,2423,2423,match,Expired and hospice codes
+cohort_encounters,99343,99343,match,Primary cohort
+early_readmissions,11314,11314,match,Primary cohort
+early_readmission_percent,11.39,11.388825,match_rounded,Primary cohort
+low_medication_encounters,4938,4938,match,0-5 inpatient medications
+moderate_medication_encounters,43526,43526,match,6-14 inpatient medications
+high_medication_encounters,50879,50879,match,15 or more inpatient medications
+low_medication_readmission_percent,7.61,7.614419,match_rounded,Unadjusted rate
+moderate_medication_readmission_percent,10.28,10.283509,match_rounded,Unadjusted rate
+high_medication_readmission_percent,12.70,12.700721,match_rounded,Unadjusted rate
+no_prior_inpatient_readmission_percent,8.59,8.589327,match_rounded,Unadjusted rate
+two_plus_prior_inpatient_readmission_percent,22.02,22.020689,match_rounded,Unadjusted rate
+age_80_plus_readmission_percent,12.47,12.474373,match_rounded,Unadjusted rate
+medication_band_chi_square,209.17,209.171043,match_rounded,Full-encounter calculation assumes independence
+insulin_chi_square,199.30,199.299886,match_rounded,Full-encounter calculation assumes independence
+age_chi_square,133.60,133.599255,match_rounded,Ten original age bands
+a1c_chi_square,42.56,42.557541,match_rounded,Four original result categories
+inpatient_mann_whitney_u,605000000,604815339.5,match_rounded,PDF gives three significant figures; ties allow a half-integer statistic
+emergency_mann_whitney_u,530000000,529835396,match_rounded,PDF gives three significant figures
+prior_inpatient_adjusted_or,1.310,1.309207,close_not_exact,Original model specification unavailable
+prior_emergency_adjusted_or,1.034,1.034718,close_not_exact,Current specification and clustered uncertainty
+diagnosis_count_adjusted_or,1.048,1.048409,close_not_exact,Current specification
+length_of_stay_adjusted_or,1.024,1.023297,close_not_exact,Current specification
+age_80_plus_adjusted_or,1.219,1.259148,different,Current adjustment specification
+age_60_79_adjusted_or,1.138,1.169718,different,Current adjustment specification
+medication_changed_adjusted_or,0.936,0.940874,close_not_exact,PDF flag definition ambiguous and sensitivity evidence inconsistent
+mcfadden_pseudo_r_squared,0.0363,0.036800,different,Current model specification
