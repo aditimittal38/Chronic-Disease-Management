@@ -19,7 +19,7 @@ Chronic-Disease-Management/
 
 - [UCI instructions](datasets/uci/README.md)
 - [Research findings](datasets/uci/reports/06_final_report/README.md)
-- [PDF verification](datasets/uci/reports/pdf_review/README.md)
+
 
 From this repository root, using the interpreter containing the dependencies:
 
